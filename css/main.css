@@ -17,6 +17,12 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+@media only screen and (min-width: 38em) {
+
+  html{
+  line-height: 1.3em;
+  font-size: 1.5em;
+  }
 
 article {
   max-width: 43em;
@@ -25,6 +31,13 @@ article {
 article h1 {
   font-weight: normal;
 }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+
+  }
 
 article header {
   border-bottom: 1px solid #999;
@@ -33,11 +46,18 @@ article header {
 article header p {
   font-style: italic;
 }
+}
+
+@media only screen and (min-width: 90em) {
+
+html {
+
+}
 
 article > p:last-child {
   border-bottom: 1px solid #999;
 }
-
+}
 blockquote {
   max-width: 24em;
   color: #555;
@@ -46,4 +66,5 @@ blockquote {
 
 .quote {
   color: #999;
+}
 }
